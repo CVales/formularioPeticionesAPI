@@ -1,0 +1,161 @@
+/* Reset de estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Estilo del encabezado */
+header h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Contenedor del formulario */
+form {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Títulos y textos */
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Contenedor de la confirmación */
+.confirmation {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Alinea el contenido a la izquierda */
+  margin: 0 auto;
+  /* Centra el cuadro de confirmación en la pantalla */
+  text-align: left;
+  /* Justifica el texto a la izquierda */
+}
+
+/* Ajustes de títulos y textos en la confirmación */
+.confirmation h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  /* Centra el título dentro del cuadro de confirmación */
+}
+
+.confirmation p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  text-align: center;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botones */
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button[type="button"] {
+  background-color: #6c757d;
+  margin-right: 0.5rem;
+}
+
+button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* Mensajes de error */
+.error {
+  color: #d9534f;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Ajustes de diseño responsivo */
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+
+  form,
+  .confirmation {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
